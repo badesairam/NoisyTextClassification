@@ -13,4 +13,3 @@ it can be downloaded using
 	gunzip wget https://s3.amazonaws.com/dl4j-distribution/GoogleNews-vectors-negative300.bin.gz 
  
 Output is present in "predictions_eval.csv"
-Sorry for the messy code ( should have done it in modules)
