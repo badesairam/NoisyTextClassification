@@ -1,0 +1,16 @@
+only one file is needed for the running --> solution.py0
+It does have all the experiments that are run but commented out only the best model is present.(appropriate comments are present)
+
+Documnent vectors were precomputed so as not load google pretrained word2vecs in RAM.
+
+It has  pickled document vectors for training and dev sets which are loaded and used .
+
+These are also calculated for eval set. 
+To change the eval set, please remove the doc2vec_eval_lemma.p file from directory which will create the pickle corresponding to the eval data which is used for classification..
+google pretrained word2vec bin needs to be downloaded for the above document vector computation. (3.5GB)
+it can be downloaded using	
+	wget https://s3.amazonaws.com/dl4j-distribution/GoogleNews-vectors-negative300.bin.gz
+	gunzip wget https://s3.amazonaws.com/dl4j-distribution/GoogleNews-vectors-negative300.bin.gz 
+ 
+Output is present in "predictions_eval.csv"
+Sorry for the messy code ( should have done it in modules)
